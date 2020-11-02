@@ -153,6 +153,10 @@ public class Graduate implements StudentInterface,TeacherInterface{
 }
 
 
+##实验结果
+图片已上传
+
+
 ##核心方法
 设计两个信息管理接口StudentInterface和TeacherInterface。
 其中,StudentInterface接口包括setFee方法和getFee方法,分别用于设置和获取学生的学费;
