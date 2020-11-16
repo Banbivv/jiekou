@@ -1,22 +1,22 @@
-# jiekou
-接口异常处理实验
+# jiekou  
+接口异常处理实验  
 
-#阅读程序
+# 阅读程序  
 
-##实验目的
-掌握Java中抽象类和抽象方法的定义； 
-掌握Java中接口的定义，熟练掌握接口的定义形式以及接口的实现方法
-了解异常的使用方法，并在程序中根据输入情况做异常处理
+## 实验目的  
+掌握Java中抽象类和抽象方法的定义；   
+掌握Java中接口的定义，熟练掌握接口的定义形式以及接口的实现方法  
+了解异常的使用方法，并在程序中根据输入情况做异常处理  
 
-##实验过程
-package student;
+## 实验过程  
+package student;  
 
 /**
  * 学生接口
  * @author Administrator
  *
  */
-public interface StudentInterface {
+public interface StudentInterface {  
 	
 	// 设置学生的学费
 	public abstract void setFee(double fee);
@@ -26,14 +26,14 @@ public interface StudentInterface {
 }
 
 
-package student;
+package student;  
 
 /**
  * 教师接口
  * @author Administrator
  *
  */
-public interface TeacherInterface {
+public interface TeacherInterface {  
 	
 	// 设置教师的工资
 	public abstract void setPay(double pay);
@@ -43,9 +43,9 @@ public interface TeacherInterface {
 }
 
 
-package student;
-
-import java.util.Scanner;
+package student;  
+ 
+import java.util.Scanner;  
  
 /**
  * 研究生类
@@ -53,12 +53,12 @@ import java.util.Scanner;
  *
  */
 public class Graduate implements StudentInterface,TeacherInterface{
-	// 成员变量
-	String name;
-	String sex;
-	int age;
-	double fee;
-	double pay;
+	// 成员变量  
+	String name;  
+	String sex;  
+	int age;  
+	double fee;  
+	double pay;  
 	
 	// 实现接口中的抽象方法
 	@Override
@@ -153,19 +153,19 @@ public class Graduate implements StudentInterface,TeacherInterface{
 }
 
 
-##实验结果
-图片已上传
+## 实验结果  
+图片已上传  
 
 
-##核心方法
-设计两个信息管理接口StudentInterface和TeacherInterface。
-其中,StudentInterface接口包括setFee方法和getFee方法,分别用于设置和获取学生的学费;
-TeacherInterface接口包括setPay方法和getPay方法,分别用于设置和获取教师的工资
-定义一个研究生类Graduate,实现StudentInterface接口和TeacherInterface接口,它定义的成员变量有name(姓名)、sex(性别)、age(年龄)、fee(每学期学费)、pay(月工资)。
-创建一个叫张三的博士研究生,统计他的年收入和学费,进行对他纳税的多少.
+## 核心方法  
+设计两个信息管理接口StudentInterface和TeacherInterface。  
+其中,StudentInterface接口包括setFee方法和getFee方法,分别用于设置和获取学生的学费;  
+TeacherInterface接口包括setPay方法和getPay方法,分别用于设置和获取教师的工资  
+定义一个研究生类Graduate,实现StudentInterface接口和TeacherInterface接口,它定义的成员变量有name(姓名)、sex(性别)、age(年龄)、fee(每学期学费)、pay(月工资)。  
+创建一个叫张三的博士研究生,统计他的年收入和学费,进行对他纳税的多少.  
 
-##实验感想
-更加掌握Java中抽象类和抽象方法的定义； 
-学会Java中接口的定义，熟练掌握接口的定义形式以及接口的实现方法
-了解异常的使用方法，并在程序中根据输入情况做异常处理
-根据实验要求一步一步完成,不是很熟练的上网查的过程中更加全面了解了这个项目.
+## 实验感想  
+更加掌握Java中抽象类和抽象方法的定义；   
+学会Java中接口的定义，熟练掌握接口的定义形式以及接口的实现方法  
+了解异常的使用方法，并在程序中根据输入情况做异常处理  
+根据实验要求一步一步完成,不是很熟练的上网查的过程中更加全面了解了这个项目.  
